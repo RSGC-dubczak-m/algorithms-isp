@@ -75,7 +75,7 @@ repeat {
 print("")
 */
 
-var counter = 0.00
+var counter = Float(0.00)
 
 print("What radical would you like to reduce?")
 
@@ -83,9 +83,16 @@ print("√", terminator:"")
 
 //var input = NSString(data: NSFileHandle.fileHandleWithStandardInput().availableData, encoding:NSUTF8StringEncoding)
 
-var inputNumber = 1234567890.0
+var inputString = readLine(stripNewline: true)
+
+var inputNumber: Float = NSString(string: inputString!).floatValue
 
 var factorCounts = [Int]()
+
+if (inputNumber == 0.0){
+    print("Sorry this isn't factorable")
+    exit(0)
+}
 
     print("\nOK reducing √\(inputNumber)!")
 
