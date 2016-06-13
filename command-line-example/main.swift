@@ -108,7 +108,7 @@ for number in outsideNumber {
     outsideFinal = outsideFinal * number
 }
 
-//adds the remaining facotrs inside the radical into an array
+//adds the remaining factors inside the radical into an array
 for factors in factorCounts {
     if factorDictionary[factors] == 1 {
         
